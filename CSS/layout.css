@@ -1,0 +1,49 @@
+
+
+  #header {
+    height:100px;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    color:blue;
+  }
+
+  #headerContent {
+    margin-left: 50%;
+  }
+
+  #side {
+    display: flex;
+    height: calc( 100vh - 30px);
+  }
+
+  #sideBar {
+    width: 500px;
+
+  }
+
+  #layout4{
+    background-color:tomato;
+    flex: content;
+    padding: 20px;
+    margin: 50px;
+	height:300px;
+
+  }
+
+  #layout2{
+      background-color: blue;
+      width: 300px;
+      padding: 40px;
+      margin: 40px;
+
+  }
+
+  #layout3{
+    background-color: green;
+    width: 300px;
+    padding: 40px;
+    margin: 40px;
+
+
+}
