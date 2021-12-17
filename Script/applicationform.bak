@@ -1,0 +1,76 @@
+function vname(){
+var name=document.getElementById('content').value;
+var newname=/^(?=.*[A-Z])(?=.*[a-z])[A-Za-z]/g
+if(newname.test(name)){
+	
+	document.getElementById('tname').innerHTML='valid';
+	
+}
+else{
+	document.getElementById('tname').innerHTML='invalid';
+	
+}
+
+}
+
+
+
+
+
+
+
+function vemail(){
+
+var mail=document.getElementById('main').value;
+
+var newemail=/(?=.*[@])(?=.*[.])(?=.*[A-Za-z])(?=.*[.com|.in])[\dA-Za-z@.]{5}/g
+if(newemail.test(mail)){
+	
+	document.getElementById('tmail').innerHTML='valid';
+	
+}
+else{
+	document.getElementById('tmail').innerHTML='invalid'
+	
+}
+}
+
+
+
+
+
+
+
+
+
+function vpass(){
+
+var pass=document.getElementById('password').value;
+
+var newpassword=/(?=.*[@#$])(?=.*[A-Za-z])[\dA-Za-z@#$]{5}/g
+
+if(newpassword.test(pass)){
+	
+	document.getElementById('tpass').innerHTML='valid';
+	
+}
+else{
+	document.getElementById('tpass').innerHTML='invalid';
+	
+}
+}
+
+function phn(){
+	var phone=document.getElementById('phonenumber').value;
+	//var newphn=/(?=.*[+])(?=.*[9])(?=.*[1])(?=.*[/s])[\d+91/s]{14}/g
+    var newphn=/^[0-9][^a-zA-Z]{10}/g
+if(newphn.test(phone)){
+	
+	document.getElementById('tphn').innerHTML='valid';
+	
+}
+else{
+	document.getElementById('tphn').innerHTML='invalid';
+	
+}
+}
